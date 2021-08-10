@@ -4,14 +4,15 @@
   "description": "GitHub Action to manage a GitHub Issue",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint .",
+    "pack": "webpack"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lindluni/issue-manager.git"
   },
   "author": "Brett Logan",
-  "license": "Apache-2.0",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/lindluni/issue-manager/issues"
   },
