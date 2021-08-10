@@ -1,6 +1,6 @@
 name: Issue Manager
 description: A GitHub Action to manage the state of a GitHub Issue
-author: @lindluni
+author: '@lindluni'
 inputs:
   action:
     description: 'The operation to perform: comment, close'
