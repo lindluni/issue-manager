@@ -1,0 +1,25 @@
+name: Issue Manager
+description: A GitHub Action to manage the state of a GitHub Issue
+author: @lindluni
+inputs:
+  action:
+    description: 'The operation to perform: comment, close'
+    required: true
+  message:
+    description: 'When commenting, then body of the message to add to the issue'
+    required: false
+  number:
+    description: 'The issue number to operate on'
+    required: true
+    default: ${{ github.event.issue.number }}
+  repo:
+    description: 'The GitHub organization or owner and repository the issue belongs to'
+    required: true
+    default: ${{ github.repository }}
+  token:
+    description: 'A GitHub Access Token with write permissions on the issue object'
+    required: true
+    default: ${{ github.token }}
+runs:
+  using: node12
+  main: dist/index.js
